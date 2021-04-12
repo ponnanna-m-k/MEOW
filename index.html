@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test animation</title>
+        <title>Meow AI</title>
         <link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -76,33 +76,10 @@
 		<div style="display:none;" id="myDiv" class="animate-bottom">
 			<!-- <h2>Meow Ai</h2>
 			<p>3D Object goes here</p> -->
-			<model-viewer src="Objects/head4.glb" camera-orbit="0deg 90deg 0deg" disable-zoom auto-rotate camera-controls ar ios-src="Objects/head4.usdz" style="padding-top: 0px;">
-				<!-- <div class="controls" ,="" id="color-controls">
-					<button data-color="1,0,0,1">Red</button>
-					<button data-color="0,1,0,1">Green</button>
-					<button data-color="0,0,1">Blue</button>
-				</div> -->
+			<model-viewer id="color" src="Objects/head4.glb" camera-orbit="0deg 90deg 0deg" disable-zoom auto-rotate camera-controls ar ios-src="Objects/head4.usdz" style="padding-top: 0px;">
+				
 			</model-viewer>
 		</div>
-		
-	<script>
-		const modelViewerColor = document.querySelector("model-viewer#color");
-		
-		document.querySelector('#color-controls').addEventListener('click', (event) => {
-		const colorString = event.target.dataset.color;
-		
-		if (!colorString) {
-			return;
-		}
-		
-		const color = colorString.split(',')
-			.map(numberString => parseFloat(numberString));
-		
-		console.log('Changing color to: ', color);
-		const [material] = modelViewerColor.model.materials;
-		material.pbrMetallicRoughness.setBaseColorFactor(color);
-		});
-	</script>
 		<script>
 		var myVar;
 		
@@ -115,24 +92,5 @@
 			document.getElementById("myDiv").style.display = "block";
 		}
 		</script>
-
-	<script>
-		const modelViewerColor = document.querySelector("model-viewer#color");
-		
-		document.querySelector('#color-controls').addEventListener('click', (event) => {
-		const colorString = event.target.dataset.color;
-		
-		if (!colorString) {
-			return;
-		}
-		
-		const color = colorString.split(',')
-			.map(numberString => parseFloat(numberString));
-		
-		console.log('Changing color to: ', color);
-		const [material] = modelViewerColor.model.materials;
-		material.pbrMetallicRoughness.setBaseColorFactor(color);
-		});
-	</script>
     </body>
 </html>
