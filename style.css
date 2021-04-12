@@ -9,7 +9,7 @@ body{
 }
 
 #Layer_2{
-    animation: change 2s  linear infinite;
+    animation: change 4s  linear;
     /* animation: Layer 2s infinite  ; */
     transform-origin: center;
     transform-box: fill-box;
