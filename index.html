@@ -3,24 +3,25 @@
     <head>
         <title>Test animation</title>
         <link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 		<style>
 			model-viewer{
 				width: 100%;
-				height: 530px;
-				margin: 0;
+				height: 650px;
+				margin: 0 auto;
 			}
 
 			model-viewer#color {
     			--poster-color: transparent;
 				--progress-bar-height: 0px;
-				--progress-bar-color: rgb(249, 164, 37);
+				--progress-bar-color: rgb(255, 255, 255);
 				/* --progress-mask: rgb(91, 245, 237); */
  			 }
 		</style>
     </head>
     <body onload="myFunction()">
-        <div id="data-animation">
+        <div id="data-animation" style="padding-top: 140px;">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="258px"
 			height="376.3px" viewBox="0 0 258 376.3" style="enable-background:new 0 0 258 376.3;" xml:space="preserve">
 	   <g id="Layer_1">
@@ -83,6 +84,25 @@
 				</div> -->
 			</model-viewer>
 		</div>
+		
+	<script>
+		const modelViewerColor = document.querySelector("model-viewer#color");
+		
+		document.querySelector('#color-controls').addEventListener('click', (event) => {
+		const colorString = event.target.dataset.color;
+		
+		if (!colorString) {
+			return;
+		}
+		
+		const color = colorString.split(',')
+			.map(numberString => parseFloat(numberString));
+		
+		console.log('Changing color to: ', color);
+		const [material] = modelViewerColor.model.materials;
+		material.pbrMetallicRoughness.setBaseColorFactor(color);
+		});
+	</script>
 		<script>
 		var myVar;
 		
