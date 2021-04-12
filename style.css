@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+#Layer_2{
+    animation: change 2s  linear ;
+    /* animation: Layer 2s infinite  ; */
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+@keyframes change{
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+/* #Layer_1{ */
+    /* animation: change2 2s  linear; */
+    /* animation: change2 2s linear   ;
+    transform-origin: center; 
+    transform-box: fill-box; 
+
+} */
+
+/* @keyframes change2{
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+} */
+
+#Layer_3{
+    /* animation: change2 2s  linear; */
+    animation: change3 2s linear;
+    animation-delay: 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+#Layer_4{
+    /* animation: change2 2s  linear; */
+    animation: change3 2s linear;
+    animation-delay: 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+@keyframes change3{
+    0%{
+        transform: scale(1,1);
+        /* transform: rotateY(0deg); */
+    }
+    50%{
+        /* transform: scale(1,1); */
+        transform: scale(0.5,0.5);
+        /* transform: rotateY(360deg); */
+    }
+    100%{
+        transform: scale(1,1);
+        /* transform: rotateY(360deg); */
+    }
+}
+
+@keyframes change4{
+    0%{
+        transform: scale(1,1);
+        /* transform: rotateY(0deg); */
+    }
+    50%{
+        /* transform: scale(1,1); */
+        transform: scale(0.2,0.2);
+        /* transform: rotateY(360deg); */
+    }
+    100%{
+        transform: scale(1,1);
+        /* transform: rotateY(360deg); */
+    }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
