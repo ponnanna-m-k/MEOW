@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Meow AI</title>
+        <title>Meow Ai</title>
         <link rel="stylesheet" href="style.css">
     	<link rel="icon" href="Objects/favicon.png">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> 
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 		<style>
@@ -17,7 +19,7 @@
     			--poster-color: transparent;
 				--progress-bar-height: 0px;
 				--progress-bar-color: rgb(255, 255, 255);
-				--progress-mask: rgb(91, 245, 237);
+				/* --progress-mask: rgb(91, 245, 237); */
  			 }
 		</style>
 
@@ -75,15 +77,16 @@
 	   </g>
 	   </svg>
 		</div>
-
-		<div style="display:none;" id="myDiv" class="animate-bottom">
-			<!-- <h2>Meow Ai</h2>
-			<p>3D Object goes here</p> -->
+		
+		<div  style="display:none; " id="myDiv" class="animate-bottom">
+			<div style="padding-top: 30px;">
+			<h2 >Meow Ai</h2>
+			</div >
+			<!-- <p>3D Object goes here</p> -->
 			<model-viewer id="color" src="Objects/head4.glb" camera-orbit="0deg 90deg 0deg" disable-zoom auto-rotate camera-controls ar ios-src="Objects/head4.usdz" style="padding-top: 0px;">
 				
 			</model-viewer>
 		</div>
-
 		
 	<script>
 		const modelViewerColor = document.querySelector("model-viewer#color");
@@ -112,7 +115,7 @@
 		
 		function showPage() {
 			document.getElementById("data-animation").style.display = "none";
-			document.getElementById("myDiv").style.display = "block";
+			document.getElementById("myDiv").style.display = "contents";
 		}
 		</script>
     </body>
