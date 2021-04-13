@@ -13,13 +13,14 @@
 			margin: 0 auto;
 		}
 
-		model-viewer#color {
-		--poster-color: transparent;
-			--progress-bar-height: 0px;
-			--progress-bar-color: rgb(255, 255, 255);
-			/* --progress-mask: rgb(91, 245, 237); */
-		 }
-	</style>
+			model-viewer#color {
+    			--poster-color: transparent;
+				--progress-bar-height: 0px;
+				--progress-bar-color: rgb(255, 255, 255);
+				--progress-mask: rgb(91, 245, 237);
+ 			 }
+		</style>
+
     </head>
     <body onload="myFunction()">
         <div id="data-animation" style="padding-top: 120px;">
@@ -82,6 +83,26 @@
 				
 			</model-viewer>
 		</div>
+
+		
+	<script>
+		const modelViewerColor = document.querySelector("model-viewer#color");
+		
+		document.querySelector('#color-controls').addEventListener('click', (event) => {
+		const colorString = event.target.dataset.color;
+		
+		if (!colorString) {
+			return;
+		}  
+		
+		const color = colorString.split(',')
+			.map(numberString => parseFloat(numberString));
+		
+		console.log('Changing color to: ', color);
+		const [material] = modelViewerColor.model.materials;
+		material.pbrMetallicRoughness.setBaseColorFactor(color);
+		});
+	</script>
 		<script>
 		var myVar;
 		
