@@ -2,7 +2,7 @@
   margin: 0;
   /* padding-top: 50px; */
   box-sizing: border-box;
-  font-family: 'Zen Dots', cursive;
+  /* font-family: 'Zen Dots', cursive; */
 }
 
 body{
@@ -160,3 +160,8 @@ body{
   width: 150px;
   border-radius: 50%;
 } 
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: @screen-xs) {  
+  col{font-size:50px} /*1rem = 16px*/
+}
