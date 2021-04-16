@@ -1,133 +1,162 @@
 *{
-    margin: 0;
-    /* padding-top: 50px; */
-    box-sizing: border-box;
-    font-family: 'Zen Dots', cursive;
+  margin: 0;
+  /* padding-top: 50px; */
+  box-sizing: border-box;
+  font-family: 'Zen Dots', cursive;
 }
 
 body{
-    text-align: center;
+  /* text-align: center; */
+}
+
+.navbar-custom {
+  /* background-color: white; */
+}
+
+.navbar{
+  color: black;
 }
 
 #Layer_2{
-    animation: change 4s  linear;
-    /* animation: Layer 2s infinite  ; */
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: change 6s  linear;
+  /* animation: Layer 2s infinite  ; */
+  transform-origin: center;
+  transform-box: fill-box;
 
 }
 
 @keyframes change{
-    from{
-        transform: rotateZ(360deg);
-    }
-    to{
-        transform: rotateZ(0deg);
-    }
+  0%{
+      transform: rotateZ(360deg);
+  }
+  10%{
+      transform: rotateZ(360deg);
+  }
+  24%{
+    transform: rotateZ(315deg);
+  }
+  36%{
+    transform: rotateZ(315deg);
+  }
+  48%{
+    transform: rotateZ(270deg);
+  }
+  60%{
+    transform: rotateZ(270deg);
+  }
+  72%{
+    transform: rotateZ(315deg);
+  }
+  84%{
+    transform: rotateZ(315deg);
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
 }
 
 /* #Layer_1{ */
-    /* animation: change2 2s  linear; */
-    /* animation: change2 2s linear   ;
-    transform-origin: center; 
-    transform-box: fill-box; 
+  /* animation: change2 2s  linear; */
+  /* animation: change2 2s linear   ;
+  transform-origin: center; 
+  transform-box: fill-box; 
 
 } */
 
 /* @keyframes change2{
-    from{
-        transform: rotateX(90deg);
-    }
-    to{
-        transform: rotateX(0deg);
-    }
+  from{
+      transform: rotateX(90deg);
+  }
+  to{
+      transform: rotateX(0deg);
+  }
 } */
 
 /* #Layer_3{ */
-    /* animation: change2 2s  linear; */
-    /* animation: change3 4s linear;
-    animation-delay: 4s;
-    transform-origin: center;
-    transform-box: fill-box;
+  /* animation: change2 2s  linear; */
+  /* animation: change3 4s linear;
+  animation-delay: 4s;
+  transform-origin: center;
+  transform-box: fill-box;
 
 } */
 /* #Layer_4{ */
-    /* animation: change2 2s  linear;
-    animation: change3 2s linear;
-    animation-delay: 2s;
-    transform-origin: center;
-    transform-box: fill-box; */
+  /* animation: change2 2s  linear;
+  animation: change3 2s linear;
+  animation-delay: 2s;
+  transform-origin: center;
+  transform-box: fill-box; */
 
 /* } */
 /* @keyframes change3{ */
-    /* from{
-        transform: rotateZ(360deg);
-    }
-    to{
-        transform: rotateZ(0deg);
-    }
+  /* from{
+      transform: rotateZ(360deg);
+  }
+  to{
+      transform: rotateZ(0deg);
+  }
 } */
 
 
 /* Add animation to "page content" */
 .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-    text-align: center;
-  }
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
 
 
-   /* Split the screen in half */
+ /* Split the screen in half */
 .split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  /* Control the left side */
-  .left {
-    left: 0;
-    background-color: #111;
-  }
-  
-  /* Control the right side */
-  .right {
-    right: 0;
-    background-color: red;
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered img {
-    width: 150px;
-    border-radius: 50%;
-  } 
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+} 
