@@ -163,5 +163,5 @@ body{
 
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: @screen-xs) {  
-  col{font-size:50px} /*1rem = 16px*/
+  col{font-size:px} /*1rem = 16px*/
 }
