@@ -161,7 +161,7 @@ body{
   border-radius: 50%;
 } 
 
-/* Small devices (landscape phones, 544px and up) */
+/* Small devices (landscape phones, 544px and up)
 @media (max-width: @screen-xs) {  
   col{font-size:px} /*1rem = 16px*/
-}
+/* } */
