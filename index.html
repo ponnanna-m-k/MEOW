@@ -27,8 +27,21 @@
  			 }
 		</style>
 
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-WQC85FP');</script>
+			<!-- End Google Tag Manager -->
+
     </head>
-    <body onload="myFunction()">
+    <body onload="myFunction();">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQC85FP"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
         <div id="data-animation" style="padding-top: 150px; text-align: center;">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="258px"
 			height="250px" viewBox="0 0 258 376.3" style="enable-background:new 0 0 258 376.3;" xml:space="preserve">
@@ -65,18 +78,28 @@
 	   </g>
 	   </svg>
 		</div>
-		
+<!-- 
+		<div id="survey" style="display:none;" class="animate-bottom">
+			<div class="split left">
+				<div class="centered">
+					<h2>I WEAR PRESCRIPTION GLASSES</h2>
+			</div>
+			</div>
+
+			<div class="split right">
+			<div class="centered">
+				<a href="" style="text-decoration: none;"><h2>I WEAR SUNGLASSES</h2></a>
+			</div>
+			</div>
+		</div> -->
+
 		<div style="display:none;" id="myDiv" class="animate-bottom">
 			<div class="pos-f-t">
-				<nav class="navbar navbar-light bg-white" style="padding-top: 0px; padding-bottom: 0px;">
-					<div class="container" >
-					  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					  </button> -->
-					  <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a> -->
+				<nav class="navbar navbar-light bg-white" style="text-align: center;">
+					<div class="container">
 					  <a class="nav-item nav-link" href="aboutus.html" style="text-decoration: none; color: #000; margin-top: 50px;">ABOUT US</a>
 					  <a class="navbar-brand" href="#">
-						<img src="Objects/logo.png" width="auto" height="80" class="d-inline-block align-top" alt="">
+						<img src="Objects/logo.png" width="auto" height="80" alt="logo" style="text-align:center; padding-right: 20px;">
 					  </a>
 					  <a class="nav-item nav-link" href="blog.html" style="text-decoration: none; color: #000; margin-top: 50px;">BLOG</a>
 					</div>
@@ -104,20 +127,19 @@
 			</div>
 			</div>
 
-			<div id="survey" style="display:none;" class="animate-bottom">
-				<p>This is survey</p>
-			</div>
-
 		<script>
-		var myVar;
-		
 		function myFunction() {
 			myVar = setTimeout(showPage, 6000);
+		}
+
+
+		function hidesurvey(){
+			// close = 
 		}
 		
 		function showPage() {
 			document.getElementById("data-animation").style.display = "none";
-			document.getElementById("survey").style.display = "contents";
+			// document.getElementById("survey").style.display = "contents";
 			document.getElementById("myDiv").style.display = "contents";
 		}
 		</script>
