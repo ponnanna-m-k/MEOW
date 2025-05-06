@@ -4,7 +4,6 @@
         <title>Meow Ai</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
     	<link rel="icon" href="Objects/favicon1.png">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> 
@@ -16,14 +15,12 @@
 		model-viewer{
 			width: auto;
 			height: 500px;
-			/* margin: 0 auto; */
 		}
 
 			model-viewer#color {
     			--poster-color: transparent;
 				--progress-bar-height: 0px;
 				--progress-bar-color: rgb(255, 255, 255);
-				/* --progress-mask: rgb(91, 245, 237); */
  			 }
 		</style>
 
@@ -78,20 +75,6 @@
 	   </g>
 	   </svg>
 		</div>
-<!-- 
-		<div id="survey" style="display:none;" class="animate-bottom">
-			<div class="split left">
-				<div class="centered">
-					<h2>I WEAR PRESCRIPTION GLASSES</h2>
-			</div>
-			</div>
-
-			<div class="split right">
-			<div class="centered">
-				<a href="" style="text-decoration: none;"><h2>I WEAR SUNGLASSES</h2></a>
-			</div>
-			</div>
-		</div> -->
 
 		<div style="display:none;" id="myDiv" class="animate-bottom">
 			<div class="pos-f-t">
@@ -106,7 +89,6 @@
 				  </nav>
 			</div>
 			<model-viewer id="color" src="Objects/head4.glb" camera-orbit="0deg 90deg 0deg" camera-controls auto-rotate disable-zoom ar ios-src="Objects/head4.usdz" style="padding-top: 0px;">
-				<!-- <img src="Objects/logo.jpg" height="200px" style="text-align: left;"> -->
 			</model-viewer>
 			<div class="container" style="text-align: center; padding-bottom: -20px;">
 				<div class="row" style="font-size: 12px;">
@@ -116,8 +98,6 @@
 					<div class="col">
 						<button type="button" class="btn btn-secondary btn-rounded">DISCOVER NOW</button><br>
 						<a class="fa fa-instagram fa-lg" style="text-decoration: none; color: #000;"></a><br><br>
-						<!-- <a class="fa fa-facebook-square fa-lg" style="text-decoration: none; color: #000;"></a> -->
-						<!-- <a class="fa fa-facebook-square " style="text-decoration: none; color: #000;"></a> -->
 						<p><a class="fa fa-copyright" style="text-decoration: none; color: #000;"></a> meow.moda 2021</p>
 					</div>
 					<div class="col" style="text-align: right;">
@@ -134,14 +114,8 @@
 			myVar = setTimeout(showPage, 6000);
 		}
 
-
-		function hidesurvey(){
-			// close = 
-		}
-		
 		function showPage() {
 			document.getElementById("data-animation").style.display = "none";
-			// document.getElementById("survey").style.display = "contents";
 			document.getElementById("myDiv").style.display = "contents";
 		}
 		</script>
