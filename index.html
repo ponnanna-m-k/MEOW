@@ -119,5 +119,23 @@
 			document.getElementById("myDiv").style.display = "contents";
 		}
 		</script>
+
+		<script>
+			function myFunction() {
+				// Check if the animation has already been shown
+				if (sessionStorage.getItem('animationShown')) {
+					showPage(); // Skip animation and show the main content
+				} else {
+					// Show animation and set the session storage flag
+					sessionStorage.setItem('animationShown', 'true');
+					myVar = setTimeout(showPage, 6000);
+				}
+			}
+
+			function showPage() {
+				document.getElementById("data-animation").style.display = "none";
+				document.getElementById("myDiv").style.display = "contents";
+			}
+		</script>
     </body>
 </html>
